@@ -34,7 +34,7 @@
         .navbar-custom {
             background: rgba(13, 33, 64, 0.97);
             backdrop-filter: blur(12px);
-            padding: 14px 0;
+            padding: 18px 0;
             border-bottom: 3px solid var(--gold);
             transition: padding 0.3s ease;
         }
@@ -42,12 +42,12 @@
         .navbar-brand {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
 
         .navbar-brand img {
-            width: 56px;
-            height: 56px;
+            width: 68px;
+            height: 68px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--gold);
@@ -57,7 +57,7 @@
         .brand-text h4 {
             color: var(--gold);
             margin: 0;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: 700;
             line-height: 1.2;
             white-space: nowrap;
@@ -65,16 +65,16 @@
 
         .brand-text span {
             color: var(--light-blue);
-            font-size: 0.7rem;
+            font-size: 0.78rem;
             white-space: nowrap;
         }
 
         .navbar-nav .nav-link {
             color: rgba(255,255,255,0.88) !important;
-            margin: 0 1px;
+            margin: 0 2px;
             font-weight: 500;
-            font-size: 0.82rem;
-            padding: 6px 10px !important;
+            font-size: 0.95rem;
+            padding: 8px 14px !important;
             position: relative;
             transition: color 0.2s ease;
             white-space: nowrap;
@@ -84,7 +84,7 @@
         .navbar-nav .nav-link:not(.btn-nav)::after {
             content: '';
             position: absolute;
-            left: 10px;
+            left: 14px;
             bottom: 2px;
             width: 0;
             height: 2px;
@@ -95,7 +95,7 @@
 
         .navbar-nav .nav-link:not(.btn-nav):hover::after,
         .navbar-nav .nav-link.active:not(.btn-nav)::after {
-            width: calc(100% - 20px);
+            width: calc(100% - 28px);
         }
 
         .navbar-nav .nav-link:hover,
@@ -108,9 +108,9 @@
             color: var(--dark) !important;
             border-radius: 999px !important;
             font-weight: 700 !important;
-            font-size: 0.82rem !important;
-            padding: 8px 18px !important;
-            margin-left: 8px;
+            font-size: 0.95rem !important;
+            padding: 10px 24px !important;
+            margin-left: 10px;
             transition: 0.2s ease;
             white-space: nowrap;
         }
@@ -655,7 +655,7 @@
     /* Shrink navbar on scroll */
     window.addEventListener('scroll', function() {
         document.querySelector('.navbar-custom').style.padding =
-            window.scrollY > 40 ? '6px 0' : '14px 0';
+            window.scrollY > 40 ? '8px 0' : '18px 0';
     });
 </script>
 
